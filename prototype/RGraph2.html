@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Covid-19 Knowledge Map</title>
+        <link rel="stylesheet" type="text/css" href="vis.css" />
+        <link rel="stylesheet" type="text/css" href="tipTip.css" />
+        <script language="javascript" type="text/javascript" src="jquery-1.7.2.min.js"></script>
+        <script language="javascript" type="text/javascript" src="jquery.tipTip.minified.js"></script>
+        <script language="javascript" type="text/javascript" src="data.js"></script>
+        <!--[if IE]><script language="javascript" type="text/javascript" src="excanvas.js"></script><![endif]-->
+        <!-- JIT Library File -->
+        <script language="javascript" type="text/javascript" src="jit-yc.js"></script>
+        <script language="javascript" type="text/javascript" src="rgraph-params.js"></script>
+        <!-- Example File -->
+        <script language="javascript" type="text/javascript" src="RGraph2.js"></script>
+    </head>
+    <body onload="init();">
+		<div id="sidebar">
+			<h2>Filters</h2>
+			<form>
+				<p class="label"> Select Persona </p>
+				<select>
+					<option>Direct Care</option>
+					<option>Patient</option>
+					<option>Public Health</option>
+					<option>Research</option>
+					<option>Administration</option>
+				</select>
+				<p></p>
+				<hr>
+				<p class="label"> Search </p>
+				<input type="search" id="nsearch" name="nsearch" value="Enter Keywords">
+				<p></p>
+				<hr>
+				<p class="label"> Select Publication Type </p>
+				<select multiple size="8">
+					<option>All</option>
+					<option>Consensus Opinion</option>
+					<option>Paper</option>
+					<option>Editorial</option>
+					<option>Letters (eg. to the Editor)</option>
+					<option>News</option>
+					<option>Other</option>
+				</select>
+				<p></p>
+				<p class="label"> Select Knowledge Type </p>
+				<select multiple size="8">
+					<option>All</option>
+					<option>Guidelines</option>
+					<option>Workflows</option>
+					<option>Models</option>
+					<option>Data Visualizations</option>
+					<option>CDS Rules</option>
+					<option>Policies and Procedures</option>
+					<option>Other</option>
+				</select>
+				<p></p>
+				<p class="label"> Select Representation/Formalism </p>
+				<select multiple size="5">
+					<option>All</option>
+					<option>Narrative</option>
+					<option>Executable</option>
+					<option>Formal Model</option>
+					<option>Terminology</option>
+				</select>
+				<p></p>
+				<p class="label"> Select Source </p>
+				<select multiple size="6">
+					<option>All</option>
+					<option>Government</option>
+					<option>NGO</option>
+					<option>Commercial</option>
+					<option>Academia</option>
+					<option>Other</option>
+				</select>
+				<p></p>
+			</form>	
+		</div>
+        <div id="container">
+        </div>
+        <div id="inner-details"></div>
+    </body>
+</html>

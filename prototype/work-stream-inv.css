@@ -1,0 +1,26 @@
+h1 {
+    font-size: 18px;
+
+}
+#nodeTable {
+    float:left;
+    padding:10px;
+}
+
+#nodeTable table {
+    background-color: #eee;
+}
+
+#nt {
+    border-spacing:0;
+    border-collapse:collapse;
+    empty-cells: show;
+    border: 1px solid #666;
+}
+
+#nt td, #nt th {
+    padding:5px;
+    border: 1px solid #666;
+    vertical-align: top;
+    color:darkslateblue;
+}
